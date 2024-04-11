@@ -121,10 +121,11 @@ h3{
 }
 
 .instagram-media{
-	display: flex;
+	/*display: flex;
 	flex: 1;
 	position: relative;
 	left: 28%;
+	float: center;*/
 }
 
 .youtube{
