@@ -8,38 +8,119 @@
 	<link rel="icon" type="image/x-icon" href="Content/FaviconM.png">
 </head>
 <body>
-	<div>
-		<h1>milioso</h1>
-	</div>
-	<div class="navbar">
-		<a href="index.html">Home</a>
-		<div class="dropdown">
-			<button class="dropbtn">Video</button>
-			<div class="dropdown-content">
-				<a href="Milio_MusicVideos.html">Music Videos</a>
-				<a href="Milio_MotionGraphics.html">Motion Graphics</a>
-				<a href="Milio_OldStuff.html">Old Stuff</a>
-			</div>
+
+	<!--Header and Navbar-->
+	<div class="header">
+
+		<div class="milioso">
+			<h1>milioso</h1>
 		</div>
-		<div class="dropdown">
-			<button class="dropbtn">Image</button>
-			<div class="dropdown-content">
-				<a href="Milio_Illustration.html">Illustration</a>
-				<a href="Milio_Photoshop.html">Photoshop</a>
-				<a href="Milio_Poetry.html">Poetry</a>
+	
+		<!--New Navbar-->
+		<div class="navbar">
+			<a href="index.html">Home</a>
+			<div class="dropdown">
+				<button onclick="window.location.href='Milio_VideoP.html'" class="dropbtn">Video</button>
+				<div class="dropdown-content">
+					<a href="Milio_VideoP.html#MotionGraphics">Motion Graphics</a>
+					<a href="Milio_VideoP.html#MusicVideos">Music Videos</a>
+					<a href="Milio_VideoP.html#OldProjects">Old Projects</a>
+				</div>
 			</div>
+			<div class="dropdown">
+				<button onclick="window.location.href='Milio_ImageP.html'" class="dropbtn">Image</button>
+				<div class="dropdown-content">
+					<a href="Milio_ImageP.html#Illustration">Illustration</a>
+					<a href="Milio_ImageP.html#Photoshop">Photoshop</a>
+					<a href="Milio_ImageP.html#DigitalCollage">Digital Collage</a>
+				</div>
+			</div>
+			<a href="Milio_ContactP.html" style="float: right;">Contact</a>
 		</div>
-		<a href="Milio_Contact.html" style="float: right;">Contact</a>
-	</div>
-	<div class="bulk">
-		<p>Welcome to my website...</p>
 	</div>
 	
-	<div class="container">
-		<img id="profile" src="Content/IMG1.PNG" alt="IMG1">
-		<p>
-			Hi, I'm Miles Madsen Borden, a 2D and 3D motion graphics artist currently based out of Chicago, IL. I have a passion for filmmaking and will soon be graduating from Columbia College Chicago with a BA in Film. Besides film, my passions include books, comics, video games, and any other kind of storytelling. I'm originally from Steamboat Springs, Colorado, but I've lived a lot of places. I was born in New York and have returned to visit many times in my life. I went to high-school in Portland, Oregon, and am very familiar with the west-coast as well. I've been inspired by a lot of things in my life. As a kid, I loved comics and animation. Some favorites were "Avatar the Last Airbender", "Naruto", "Astroboy", and basically anything else by Osamu Tezuka. I also really love the classics of sci-fi, "1984", "Slaughterhouse 5", "Fahrenheit 451", and so on. These days I've been really inspired by the new wave of indie filmmaking that is challenging the hollywood system i.e. A24, though they've become more mainstream in recent years. I'd love to eventually make films with production companies like them, in the meantime, I'm going to keep working on low and no budget shorts with my friends. Another goal of mine is to get a comic book published. I love to draw but my sibling also graduated with a degree in illustration and I would love to collaborate with them on a story, as they have already had a few zines published. Thanks for taking the time to check me out, I hope you like what you see!
-		</p>
+	<div class="parallax" style="background-image: url('Content/GIFS/Sleepyhead.gif'); background-position: 0px -150px;">
+		
+	</div>
+	
+	<div class="secTitle">
+		<p>Image</p>
+	</div>
+	
+	<!-- Image Autogallery -->
+	<div class="parallax" style="background-image: url('Content/BGS/Droplets.jpeg');">
+	<div onclick="window.location.href='Milio_ImageP.html'" class="autogallery-container">
+		<div class="autogallery">
+			<div class="autogallery-item">
+				<img alt="Back Alley" class="imgCentered" src="Content/Illustration/BackAlley.jpeg">
+			</div>
+			<div class="autogallery-item">
+				<img alt="Takeoff" class="imgCentered" src="Content/Collage/Connor1.jpeg">
+			</div>
+			<div class="autogallery-item">
+				<img alt="Milioso" class="imgCentered" src="Content/Collage/Milioso.jpeg">
+			</div>
+			<div class="autogallery-item">
+				<img alt="Sambo's" class="imgCentered" src="Content/Menus/Sambos-COMP.PNG">
+			</div>
+			<div class="autogallery-item">
+				<img alt="Meeting Forever" class="imgCentered" src="Content/mimi/BunnyForever.PNG">
+			</div>
+			<!-- Add more images as needed -->
+		</div>
+	</div>
+	</div>
+	
+	<div class="parallax" style="background-image: url('Content/BGS/Forest1.jpeg'); background-position: 0px -200px;">
+	</div>
+	
+	<div class="secTitle">
+		<p>Video</p>
+	</div>
+	
+	<!-- Video Autogallery -->
+	<div class="parallax"style="background-image: url('Content/BGS/Droplets.jpeg');">
+	<div onclick="window.location.href='Milio_VideoP.html'" class="autogallery-container">
+		<div class="autogallery2">
+			<div class="autogallery-item">
+				<img alt="Glitch_" class="gifCentered" width="765" height="430" src="Content/GIFS/Glitch_.gif">
+			</div>
+			<div class="autogallery-item">
+				<img alt="Sleepyhead" class="gifCentered" width="765" height="430" src="Content/GIFS/Sleepyhead.gif">
+			</div>
+			<div class="autogallery-item">
+				<img alt="Changes" class="gifCentered" width="765" height="430" src="Content/GIFS/Changes.gif">
+			</div>
+			<div class="autogallery-item">
+				<img alt="Sometimes..." class="gifCentered" width="765" height="430" src="Content/GIFS/Sometimes....gif">
+			</div>
+			<div class="autogallery-item">
+				<img alt="Froggie" class="gifCentered" width="765" height="430" src="Content/GIFS/Froggie.gif">
+			</div>
+			<!-- Add more images as needed -->
+		</div>
+	</div>
+	</div>
+	
+	<div class="parallax" style="background-image: url('Content/BGS/Forest2.jpeg'); background-position: 0px -200px;">
+	
+	</div>
+	
+	<!--Bio-->
+	<div class="parallax" style="background-image: url('Content/BGS/Droplets.jpeg');">
+		<!--<div class="bulk">
+			<p>Welcome to my website...</p>
+		</div>-->
+	
+		<div class="containerA">
+			<img id="profile" src="Content/IMG1.PNG" alt="IMG1">
+			<p>
+				Hi, I'm Miles Madsen Borden, a 2D and 3D motion graphics artist currently based out of Chicago, IL. I have a passion for filmmaking and will soon be graduating from Columbia College Chicago with a BA in Film. Besides film, my passions include books, comics, video games, and any other kind of storytelling. I'm originally from Steamboat Springs, Colorado, but I've lived a lot of places. I was born in New York and have returned to visit many times in my life. I went to high-school in Portland, Oregon, and am very familiar with the west-coast as well. I've been inspired by a lot of things in my life. As a kid, I loved comics and animation. Some favorites were "Avatar the Last Airbender", "Naruto", "Astroboy", and basically anything else by Osamu Tezuka. I also really love the classics of sci-fi, "1984", "Slaughterhouse 5", "Fahrenheit 451", and so on. These days I've been really inspired by the new wave of indie filmmaking that is challenging the hollywood system i.e. A24, though they've become more mainstream in recent years. I'd love to eventually make films with production companies like them, in the meantime, I'm going to keep working on low and no budget shorts with my friends. Another goal of mine is to get a comic book published. I love to draw but my sibling also graduated with a degree in illustration and I would love to collaborate with them on a story, as they have already had a few zines published. Thanks for taking the time to check me out, I hope you like what you see!
+			</p>
+		</div>
+	</div>
+	
+	<div class="parallax" style="background-image: url('Content/BGS/CloudBreak3.gif');">
 	</div>
 	
 	<footer>
@@ -49,5 +130,7 @@
 	</footer>
 	
 	<script src="JS/navbar.js"></script>
+	<script src="JS/autoGallery.js"></script>
+	<script src="JS/autoGallery2.js"></script>
 </body>
 </html>

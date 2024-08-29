@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const gallery = document.querySelector(".gallery2");
-    const prevBtn = document.getElementById("prevBtn");
-    const nextBtn = document.getElementById("nextBtn");
+    const prevBtn = document.getElementById("prevBtn2");
+    const nextBtn = document.getElementById("nextBtn2");
 
     let currentIndex = 0;
 	

@@ -1,29 +1,17 @@
 /*cascading stylesheet, easy to make just define by html tag*/
 
-/*html{
-	background-image: url("../Content/isolated cloud.png");
-	background: linear-gradient(rgba(51, 74, 135, 0.5), rgba(51, 74, 135, 0.5)), url('../Content/isolated cloud.png');
-	background-repeat: repeat;
-}
-
-body{
-	background-image: url("../Content/isolated cloud.png");
-	background: linear-gradient(rgba(51, 74, 135, 0.5), rgba(51, 74, 135, 0.5)), url('../Content/isolated cloud.png');
-	background-repeat: repeat;
-}*/
-
 body,html{
 	margin: 0;
 	padding: 0;
 	background-color: black;
 	font-family: "Courier New", Courier, monospace;
-	color: white;
+	color: #f2f2f2;
 	height: 100%;
 }
 
 h1{
 	font-family: "Courier New", Courier, monospace;
-	margin: 15px;
+	margin-bottom: 15px;
 	text-align: center;
 }
 
@@ -33,29 +21,49 @@ h3{
 	text-align: center;
 }
 
-#profile{
-	margin: 50px;
-	margin-top: 20px;
-	height: 500px;
-	border: 16px inset #CCFFB3;
-	float: left;
+footer{
+	position: relative;
+	z-index: 5;
+	background: black;
+	height: 50px;
+	padding-top: 10px;
 }
 
-.container{
-	display: flex;
+/* Header Start */
+
+.header{
+	position: fixed;
+	background: black;
+	height: 99px;
+	width: 100%;
+	z-index: 2;
+	
 }
 
-/*formatting for main part of the body*/
-.bulk{
-	margin: 0;
-	margin-left: 30px;
-	margin-top: 15px;
+.milioso{
+	position: relative;
+	background-color: black;
+}
+
+.pageTitle{
+	position: relative;
+	bottom: 15px;
+}
+
+/* Header End */
+
+/* Navbar Start */
+
+#imgPage{
+	position: relative;
+	top: -62px;
 }
 
 .navbar {
-    overflow: hidden;
-    background-color: none;
+    background-color: black;
 	font-weight: bold;
+	position: relative;
+	top: -20px;
 }
 
 .navbar a {
@@ -64,7 +72,8 @@ h3{
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
+	text-decoration: none;
+	background-color: black;
 }
 
 .navbar a:hover {
@@ -74,7 +83,7 @@ h3{
 
 .dropdown {
     float: left;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 .dropdown .dropbtn {
@@ -83,7 +92,7 @@ h3{
     outline: none;
     color: #f2f2f2;
     padding: 14px 16px;
-    background-color: inherit;
+    background-color: black;
     font-family: inherit;
 	font-weight: bold;
     margin: 0;
@@ -92,6 +101,10 @@ h3{
 .dropdown:hover .dropbtn{
 	background-color: #CCFFB3;
 	color: black;
+}
+
+.dropbtn:hover{
+	cursor: pointer;
 }
 
 .dropdown-content {
@@ -110,6 +123,7 @@ h3{
     text-decoration: none;
     display: block;
     text-align: left;
+	background-color: white;
 }
 
 .dropdown-content a:hover {
@@ -118,6 +132,87 @@ h3{
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+/* Navbar End */
+
+/* Body Formatting */
+
+#profile{
+	margin: 50px;
+	margin-top: 20px;
+	height: 500px;
+	float: left;
+	border-radius: 10px;
+	z-index: 1;
+	transition: transform 0.5s;
+}
+
+#profile:hover{
+	z-index: 3;
+	transform: scale(1.1);
+}
+
+#contact{
+	position: relative;
+	left: 150px;
+	top: 150px;
+	height: 400px;
+	float: left;
+	border-radius: 10px;
+	z-index: 1;
+	transition: transform 0.5s;
+}
+
+.contCont{
+	position: relative;
+	top: 250px;
+	margin-left: 600px;
+	margin-right: 200px;
+	font-size: 25px;
+	text-align: center;
+	background-color: black;
+	border-radius: 20px;
+	padding: 20px;
+}
+
+.containerA{
+	display: flex;
+ 
+	/* Formatting 
+	border: 20px double #BAD8FF;
+	border-radius: 50px;
+	background: gray; */
+}
+
+.containerA p{
+	background-color: black;
+	margin: auto;
+	margin-right: 20px;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.secTitle{
+	text-align: center;
+	font-size: 50px;
+	max-height: 50px;
+}
+
+.secTitle p{
+	position: relative;
+	top: -25px;
+}
+
+.parallax{
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .instagram-media{
@@ -143,18 +238,94 @@ h3{
 	color: black;
 }
 
-.gallery-container {
+/* Body Formatting End */
+
+/* Gallery Start */
+
+.autogallery-container {
     max-width: 800px;
+	max-height: 500px;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
+	z-index: 1;
+	transition: transform 0.5s;
 }
 
-.gallery-container2 {
-    max-width: 800px;
-    margin: 0 auto;
-    position: relative;
+.autogallery-container:hover{
+	cursor: pointer;
 }
+
+.autogallery {
+	display: flex;
+	position: relative;
+	top: 60px;
+	width: 300%;
+	transition: transform 1s ease;
+}
+
+.autogallery2 {
+	display: flex;
+	position: relative;
+	top: 60px;
+	width: 300%;
+	transition: transform 1s ease;
+}
+
+.autogallery-item {
+	position: relative;
+	flex: 1;
+}
+
+.autogallery-item img{
+	position: relative;
+	top: -60px;
+	transform: scale(0.75);
+	z-index: 2;
+	transition: translate 0.5s;
+	transition: transform 0.5s;
+	overflow: visible;
+}
+
+.gallery-container {
+    max-width: 800px;
+	max-height: 550px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+	background: none;
+	/*border: 20px double #BAD8FF;
+	border-radius: 15px;*/
+	z-index: 1;
+	transition: transform 0.5s;
+}
+
+.gallery-container:hover{
+	z-index: 5;
+	transform: scale(1.01);
+	min-height: 500px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*.darken{
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+	transition: background-color 0.3s ease;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.gallery-container:hover .darken{
+	background-color: rgba(0, 0, 0, 0.5); /* Dark overlay
+	box-shadow: 0 0 5px 10px black;
+	overflow: visible;
+	
+} */
 
 .gallery {
 	display: flex;
@@ -168,64 +339,113 @@ h3{
 	transition: transform 0.5s ease;
 }
 
+.gallery3 {
+	display: flex;
+	width: 300%;
+	transition: transform 0.5s ease;
+}
+
 .gallery-item {
 	position: relative;
 	flex: 1;
-	overflow: hidden;
 }
 
-.gallery-item2 {
-	flex: 1;
+.gallery-item img{
+	position: relative;
+	top: -50px;
+	transform: scale(0.75);
+	z-index: 2;
+	transition: translate 0.5s;
+	transition: transform 0.5s;
+	overflow: visible;
 }
 
-#SizeA{
-	margin-left: 7%;
+.gallery-item img:hover{
+	z-index: 5;
+	transform: scale(1.1);
+	transform: translate(0px, 15px) !important;
 }
 
-#SizeB{
-	margin-left: 22%;
+/* Image Positions */
+
+.imgCentered{
+	margin: auto;
+	display: block;
+	position: relative;
 }
 
-#SizeC{
-	margin-left: 16%;
+.gifCentered{
+	margin: auto;
+	display: block;
+	position: relative;
+	text-align: center;
+}
+
+.vidCentered{
+	margin: auto;
+	display: block;
+	position: relative;
+}
+
+/* File Type Formatting */
+
+.autogallery img {
+	/*width: calc(30% + 100px); /* Adjust the width to include spacing */
+	height: 500px;
+	object-fit: cover;
+}
+
+.autogallery2 img {
+	/*width: calc(30% + 100px); /* Adjust the width to include spacing */
+	height: 500px;
+	object-fit: cover;
 }
 
 .gallery img {
 	/*width: calc(30% + 100px); /* Adjust the width to include spacing */
 	height: 500px;
 	object-fit: cover;
-	border: 16px inset #CCFFB3;
 }
 
 .gallery iframe{
-	border: 16px inset #CCFFB3;
+	
 }
 
 .gallery video{
-	border: 16px inset #CCFFB3;
+	
 }
 
-.gallery2 p{
-	padding: 0;
-	float: right;
-}
 
 .gallery2 img {
 	/*width: calc(30% + 100px); /* Adjust the width to include spacing */
-	height: 100px;
-	/*object-fit: cover;*/
-	margin-right: 0;
-	margin-left: 0;
-	padding: 0;
+	height: 500px;
+	object-fit: cover;
 }
 
 .gallery2 iframe{
-	border: 16px inset #CCFFB3;
+	
 }
 
 .gallery2 video{
-	border: 16px inset #CCFFB3;
+	
 }
+
+
+.gallery3 img {
+	/*width: calc(30% + 100px); /* Adjust the width to include spacing */
+	height: 500px;
+	object-fit: cover;
+}
+
+.gallery3 iframe{
+	
+}
+
+.gallery3 video{
+	
+}
+
+/* Text Formatting */
 
 #descImage{
 	position: relative;
@@ -235,29 +455,41 @@ h3{
 	position: relative;
 }
 
-#titleA{
-	margin-left: 210px;
+.titleBox{
+	background: black;
+	border: 5px;
+	border-radius: 10px;
+	width: max-content;
+	margin: auto;
+	display: block;
+	position: relative;
 }
 
-#titleB{
-	margin-left: 300px;
+.autotitleBox{
+	font-size: 1.5em;
+	background: black;
+	border: 5px;
+	border-radius: 10px;
+	width: max-content;
+	margin: auto;
+	display: block;
+	position: relative;
 }
 
-#titleC{
-	margin-left: 330px;
+.titleCentered{
+	text-align: center;
+	padding: 5px;
 }
 
-#titleD{
-	margin-left: 355px;
+/* Gallery Button Formatting */
+
+#prevBtna{
+	float: left;
 }
 
-#titleE{
-	margin-left: 375px;
-}
-
-.navigation {
-    text-align: center;
-    margin-top: 10px;
+#nextBtna{
+	margin: 0;
+	float: right;
 }
 
 #prevBtn{
@@ -267,6 +499,30 @@ h3{
 #nextBtn{
 	margin: 0;
 	float: right;
+}
+
+#prevBtn2{
+	float: left;
+}
+
+#nextBtn2{
+	margin: 0;
+	float: right;
+}
+
+#prevBtn3{
+	float: left;
+}
+
+#nextBtn3{
+	margin: 0;
+	float: right;
+}
+
+.NPB{
+	padding: 30px;
+	position: relative;
+	top: -100px;
 }
 
 .NPB button {
@@ -283,3 +539,26 @@ h3{
 	background-color: #CCFFB3;
 	color: black;
 }
+
+.NPBvid{
+	padding: 30px;
+	position: relative;
+	top: -25px;
+}
+
+.NPBvid button {
+    padding: 10px;
+    margin: 0;
+	margin-bottom: 20px;
+	border: none;
+	background-color: black;
+	color: #f2f2f2;
+	font-family: "Courier New", Courier, monospace;
+}
+
+.NPBvid button:hover{
+	background-color: #CCFFB3;
+	color: black;
+}
+
+/* Gallery End */
