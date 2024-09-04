@@ -204,9 +204,31 @@ footer{
 	top: -25px;
 }
 
-.parallax{
+.parallaxa{
   /* Set a specific height */
-  min-height: 500px;
+  min-height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallaxb{
+  /* Set a specific height */
+  min-height: 85%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallaxc{
+  /* Set a specific height */
+  min-height: 65%;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
