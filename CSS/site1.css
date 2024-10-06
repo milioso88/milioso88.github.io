@@ -265,8 +265,8 @@ footer{
 /* Gallery Start */
 
 .autogallery-container {
-    max-width: 800px;
-	max-height: 500px;
+    max-width: auto;
+	max-height: 75%;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
