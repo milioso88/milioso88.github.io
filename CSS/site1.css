@@ -295,15 +295,13 @@ footer{
 }
 
 .autogallery-item {
-	width: 50vh;
-	height: auto;
 	position: relative;
 	flex: 1;
 }
 
 .autogallery-item img{
-	width: 50vh;
-	height: auto;
+	width: auto;
+	height: 85vh;
 	position: relative;
 	transform: scale(0.75);
 	z-index: 2;
@@ -314,7 +312,7 @@ footer{
 
 .gallery-container {
     width: 100%;
-	height: 75vh;
+	height: 95vh;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
@@ -376,19 +374,28 @@ footer{
 }
 
 .gallery-item img{
+	width: auto;
+	height: 75vh;
 	position: relative;
-	top: -50px;
-	transform: scale(0.75);
 	z-index: 2;
 	transition: translate 0.5s;
 	transition: transform 0.5s;
 	overflow: visible;
 }
 
+.gallery-item iframe{
+	height: 75vh;
+}
+
+.gallery-item video{
+	width: auto;
+	height: 75vh;
+}
+
 .gallery-item img:hover{
 	z-index: 5;
 	transform: scale(1.1);
-	transform: translate(0px, 15px) !important;
+	
 }
 
 .sizetest {
@@ -421,19 +428,17 @@ footer{
 
 .autogallery img {
 	/*width: calc(30% + 100px); /* Adjust the width to include spacing */
-	height: 500px;
 	object-fit: cover;
 }
 
 .autogallery2 img {
 	/*width: calc(30% + 100px); /* Adjust the width to include spacing */
-	height: 500px;
 	object-fit: cover;
 }
 
+
 .gallery img {
 	/*width: calc(30% + 100px); /* Adjust the width to include spacing */
-	height: 500px;
 	object-fit: cover;
 }
 
@@ -448,7 +453,6 @@ footer{
 
 .gallery2 img {
 	/*width: calc(30% + 100px); /* Adjust the width to include spacing */
-	height: 500px;
 	object-fit: cover;
 }
 
@@ -463,7 +467,6 @@ footer{
 
 .gallery3 img {
 	/*width: calc(30% + 100px); /* Adjust the width to include spacing */
-	height: 500px;
 	object-fit: cover;
 }
 
@@ -552,7 +555,7 @@ footer{
 .NPB{
 	padding: 30px;
 	position: relative;
-	top: -100px;
+	top: -5vh
 }
 
 .NPB button {
@@ -568,6 +571,7 @@ footer{
 .NPB button:hover{
 	background-color: #CCFFB3;
 	color: black;
+	cursor: pointer;
 }
 
 .NPBvid{
@@ -589,6 +593,7 @@ footer{
 .NPBvid button:hover{
 	background-color: #CCFFB3;
 	color: black;
+	cursor: pointer;
 }
 
 /* Gallery End */
