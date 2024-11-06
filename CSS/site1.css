@@ -222,26 +222,32 @@ footer{
 	justify-content: flex-start;
 }
 
-.bgSpan{
+.bgSpan {
 	
 }
 
-.secTitle{
+.reelWrapper {
+	height: 75vh;
+	width: 133vh;
+	margin: auto;
+}
+
+.secTitle {
 	text-align: center;
 	font-size: 50px;
 	max-height: 50px;
 }
 
-.secTitle:hover{
+.secTitle:hover {
 	cursor: pointer;
 }
 
-.secTitle p{
+.secTitle p {
 	position: relative;
 	top: -25px;
 }
 
-.parallaxa{
+.parallaxa {
   /* Set a specific height */
   min-height: 100%;
 
@@ -252,7 +258,7 @@ footer{
   background-size: cover;
 }
 
-.parallaxb{
+.parallaxb {
   /* Set a specific height */
   min-height: 85%;
 
@@ -263,7 +269,7 @@ footer{
   background-size: cover;
 }
 
-.parallaxc{
+.parallaxc {
   /* Set a specific height */
   min-height: 65%;
 
@@ -274,7 +280,7 @@ footer{
   background-size: cover;
 }
 
-.instagram-media{
+.instagram-media {
 	/*display: flex;
 	flex: 1;
 	position: relative;
@@ -282,7 +288,7 @@ footer{
 	float: center;*/
 }
 
-.youtube{
+.youtube {
 	float: center;
     display: block;
     color: #f2f2f2;
@@ -293,7 +299,7 @@ footer{
 	font-size: 5vh;
 }
 
-.youtube:hover{
+.youtube:hover {
 	background-color: #CCFFB3;
 	color: black;
 }
@@ -312,7 +318,7 @@ footer{
 	transition: transform 0.5s;
 }
 
-.autogallery-container:hover{
+.autogallery-container:hover {
 	cursor: pointer;
 }
 
@@ -370,23 +376,6 @@ footer{
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
-/*.darken{
-	position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-	transition: background-color 0.3s ease;
-	background-color: rgba(0, 0, 0, 0);
-}
-
-.gallery-container:hover .darken{
-	background-color: rgba(0, 0, 0, 0.5); /* Dark overlay
-	box-shadow: 0 0 5px 10px black;
-	overflow: visible;
-	
-} */
 
 .gallery {
 	display: flex;
