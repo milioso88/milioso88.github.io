@@ -229,6 +229,8 @@ footer{
 .reelWrapper {
 	height: 75vh;
 	width: 133vh;
+	position: relative;
+	top: -2vh;
 	margin: auto;
 }
 
