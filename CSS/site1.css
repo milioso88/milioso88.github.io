@@ -143,11 +143,11 @@ footer{
 /* Body Formatting */
 
 #profile{
-	margin: 50px;
-	margin-top: 20px;
-	height: 500px;
+	margin: 10vh;
+	margin-top: 4vh;
+	height: 80vh;
 	float: left;
-	border-radius: 10px;
+	border-radius: 1vh;
 	z-index: 1;
 	transition: transform 0.5s;
 }
@@ -168,6 +168,18 @@ footer{
 	transition: transform 0.5s;
 }
 
+#DA{
+	padding: 2vh;
+}
+
+#DB{
+	padding: 2vh;
+}
+
+#DC{
+	padding: 2vh;
+}
+
 .contCont{
 	position: relative;
 	top: 250px;
@@ -181,20 +193,37 @@ footer{
 }
 
 .containerA{
-	display: flex;
- 
-	/* Formatting 
-	border: 20px double #BAD8FF;
-	border-radius: 50px;
-	background: gray; */
+
+}
+
+.containerA h1{
+	background-color: black;
+	padding: 1vh;
+	display: inline;
+	border-radius: 1vh;
+}
+
+.containerA h2{
+	background-color: black;
+	padding: 1vh;
+	display: inline;
+	border-radius: 1vh;
 }
 
 .containerA p{
 	background-color: black;
-	margin: auto;
-	margin-right: 20px;
-	padding: 20px;
-	border-radius: 10px;
+	padding: 2vh;
+	border-radius: 1vh;
+}
+
+.profText {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.bgSpan{
+	
 }
 
 .secTitle{
@@ -261,6 +290,7 @@ footer{
     padding: 14px 16px;
     text-decoration: none;
 	font-weight: bold;
+	font-size: 5vh;
 }
 
 .youtube:hover{
